@@ -64,7 +64,7 @@ public class NTTDATAPage {
 		campoSearchVagas.sendKeys(palavraPesquisa);
 	}
 	
-	public void SearchVaga1() throws Exception {
+	public void GetElements() throws Exception {
 		Thread.sleep(5000);
 		List<WebElement> options = webdriver.findElements(By.xpath("//div[@class='portlet-body']//div[@ng-repeat='vacancy in vm.model.vacancies | limitTo:vm.paginationModel.pageSize']//div//div//h4"));
 		int add = 0;

@@ -35,7 +35,7 @@ public class SearchGoogle extends GlobalDriver{
 	@When("estiver na pagina, clicar em carreira e acessar junte-se a nossa equipe pesquisar {string}.")
 	public void estiver_na_pagina_clicar_em_carreira_e_acessar_junte_se_a_nossa_equipe_pesquisar(String vaga) throws Exception {
 		nttdataPage.SearchVaga(vaga);
-		nttdataPage.SearchVaga1();
+		nttdataPage.GetElements();
 	}
 
 	@Then("devera conter {int} vagas e ser vaga de {string}.")
